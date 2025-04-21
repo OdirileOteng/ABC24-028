@@ -42,7 +42,7 @@
 }
 
 .nav-links li a:hover {
-  color: #1e90ff; /* Dodger Blue hover */
+  color: #808080; /* Grey hover */
   transform: scale(1.05); /* subtle zoom effect on hover */
 }
 
