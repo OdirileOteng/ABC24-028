@@ -3,17 +3,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1e90ff;
-  padding: 15px 20px;
-  border-radius: 10px;
+  background-color: #fff; /* white background, like Apple's clean style */
+  padding: 20px 40px; /* more padding for spacious look */
+  border: 1px solid #e0e0e0; /* soft light gray border for subtle separation */
+  border-radius: 12px; /* rounded corners like Apple's design */
   flex-wrap: wrap;
   position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
 }
 
+/* Logo */
 .logo {
-  color: #fff;
-  font-size: 24px;
+  color: #333; /* dark gray text, Apple-like aesthetic */
+  font-size: 28px;
   font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #1e90ff; /* subtle hover effect with Dodger Blue */
 }
 
 /* Nav Links */
@@ -24,21 +34,23 @@
 }
 
 .nav-links li a {
-  color: white;
+  color: #333; /* dark gray links */
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.3s ease; /* smooth color transition */
 }
 
 .nav-links li a:hover {
-  color: #e0e0e0;
+  color: #1e90ff; /* Dodger Blue hover */
+  transform: scale(1.05); /* subtle zoom effect on hover */
 }
 
 /* Hamburger */
 .hamburger {
   display: none;
-  font-size: 26px;
-  color: white;
+  font-size: 28px;
+  color: #333; /* matching text color */
   cursor: pointer;
 }
 
@@ -56,17 +68,19 @@
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #1e90ff;
+    background-color: #fff; /* white background for mobile nav */
     position: absolute;
     top: 60px;
     left: 0;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 12px 12px;
+    border: 1px solid #e0e0e0; /* light border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
     padding: 10px 0;
   }
 
   .nav-links li {
     text-align: center;
-    margin: 10px 0;
+    margin: 15px 0;
   }
 
   .menu-toggle:checked + .hamburger + .nav-links {
@@ -74,9 +88,11 @@
   }
 
   img {
-  max-width: 100%;
-  height: auto;
-  border: 5px solid #1e90ff
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #e0e0e0; /* soft gray border for images */
+    border-radius: 8px; /* rounded corners for images */
+    background-color: #fff; /* clean white background */
   }
-
 }
+
