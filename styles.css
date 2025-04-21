@@ -3,10 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff; /* white background, like Apple's clean style */
+  background-color: #fff; /* white background */
   padding: 20px 40px; /* more padding for spacious look */
   border: 1px solid #e0e0e0; /* soft light gray border for subtle separation */
-  border-radius: 12px; /* rounded corners like Apple's design */
+  border-radius: 12px; /* rounded corners */
   flex-wrap: wrap;
   position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
@@ -14,7 +14,7 @@
 
 /* Logo */
 .logo {
-  color: #333; /* dark gray text, Apple-like aesthetic */
+  color: #333; /* dark gray text*/
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -23,7 +23,7 @@
 }
 
 .logo:hover {
-  color: #1e90ff; /* subtle hover effect with Dodger Blue */
+  color: #808080; /* subtle hover effect with Grey*/
 }
 
 /* Nav Links */
