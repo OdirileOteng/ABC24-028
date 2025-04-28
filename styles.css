@@ -121,8 +121,12 @@ header {
 
 /* Sections */
 section {
-  padding: 50px 20px;
+  padding: 20px;
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  
 }
 
 /* Hero / Banner Section */
