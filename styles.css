@@ -1,32 +1,64 @@
-/* Navbar Base */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark grey text */
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Navbar */
+header {
+  background: #ffffff;
+  padding: 10px 0;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff; /* white background */
-  padding: 20px 40px; /* more padding for spacious look */
-  border: 1px solid #e0e0e0; /* soft light gray border for subtle separation */
-  border-radius: 12px; /* rounded corners */
+  background-color: #fff;
+  padding: 20px 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
   flex-wrap: wrap;
   position: relative;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo */
 .logo {
-  color: #333; /* dark gray text*/
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: #333333;
   transition: color 0.3s ease;
 }
 
 .logo:hover {
-  color: #808080; /* subtle hover effect with Grey*/
+  color: #808080;
 }
 
-/* Nav Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -34,23 +66,22 @@
 }
 
 .nav-links li a {
-  color: #333; /* dark gray links */
-  text-decoration: none;
   font-weight: 500;
   font-size: 16px;
-  transition: color 0.3s ease, transform 0.3s ease; /* smooth color transition */
+  color: #333333;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #808080; /* Grey hover */
-  transform: scale(1.05); /* subtle zoom effect on hover */
+  color: #808080;
+  transform: scale(1.05);
 }
 
-/* Hamburger */
+/* Hamburger Menu */
 .hamburger {
   display: none;
   font-size: 28px;
-  color: #333; /* matching text color */
+  color: #333333;
   cursor: pointer;
 }
 
@@ -58,7 +89,7 @@
   display: none;
 }
 
-/* Responsive Rules */
+/* Responsive Navbar */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -68,13 +99,13 @@
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #fff; /* white background for mobile nav */
+    background-color: #fff;
     position: absolute;
     top: 60px;
     left: 0;
     border-radius: 0 0 12px 12px;
-    border: 1px solid #e0e0e0; /* light border */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
   }
 
@@ -86,13 +117,166 @@
   .menu-toggle:checked + .hamburger + .nav-links {
     display: flex;
   }
-
-  img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #e0e0e0; /* soft gray border for images */
-    border-radius: 8px; /* rounded corners for images */
-    background-color: #fff; /* clean white background */
-  }
 }
 
+/* Sections */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Hero / Banner Section */
+.hero {
+  background: #f9f9f9;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555555;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #808080;
+}
+
+/* Services Section */
+.services {
+  background: #ffffff;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.service {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.service p {
+  font-size: 15px;
+  color: #555555;
+}
+
+/* Pricing Section */
+.pricing {
+  background: #f9f9f9;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.price-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.price-card h3 {
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333333;
+}
+
+.price-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.price-card ul li {
+  margin: 10px 0;
+  color: #555555;
+}
+
+/* Contact Form */
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+form button {
+  background: #333333;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #808080;
+}
+
+/* Footer */
+footer {
+  background: #ffffff;
+  color: #333333;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 50px;
+  border-top: 1px solid #e0e0e0;
+}
