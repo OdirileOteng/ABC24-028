@@ -12,6 +12,57 @@
 
 <link rel="stylesheet" type="text/css" href="styles.css">
 
+<style>
+    /* Social Button Container */
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px 0;
+      justify-content: center;
+    }
+
+    /* Button Base */
+    .social-btn {
+      padding: 12px 20px;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: 500;
+      text-decoration: none;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Hover */
+    .social-btn:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+
+    /* Individual platform colors */
+    .email { background-color: #444; }
+    .call { background-color: #333; }
+    .location { background-color: #555; }
+    .whatsapp, .whatsapp-group { background-color: #25D366; }
+    .facebook { background-color: #3b5998; }
+    .telegram { background-color: #0088cc; }
+    .instagram { background-color: #E1306C; }
+    .feedback { background-color: #2c3e50; }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 600px) {
+      .social-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .social-btn {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -36,15 +87,16 @@
 
 <main>
     <div class="main-content">
+      <div class="social-links">
 
 <h2><b>About Us</b></h2>
 <p>We’d love to hear from you! Whether you have questions about forex trading, need support, or want to collaborate, feel free to reach out.</p>
 
 <h2><b>Get in Touch</b></h2>
-<p>Email:<a href="mailto:Eastoncapitalmarkets@icloud.com" class="btn btn-success">Eastoncapitalmarkets@icloud.com </a>.</p>
-<p>Phone:<a href="tel:+267 75 017 102">Call Me</a>.</p>
-<p>Location:<a href="https://www.google.com/maps?q=-1.2921,36.8219" target="_blank">Open Location</a>.</p>
-<p>Whatsapp:<a href="https://wa.me/26775017102?text=Hello%20I%20got%20your%20link%20online" target="_blank">Message on WhatsApp</a>.</p>
+<p>Email:<a href="mailto:Eastoncapitalmarkets@icloud.com"class="social-btn email">Eastoncapitalmarkets@icloud.com </a>.</p>
+<p>Phone:<a href="tel:+267 75 017 102"class="social-btn email">Call Me</a>.</p>
+<p>Location:<a href="https://www.google.com/maps?q=-1.2921,36.8219"class="social-btn email" target="_blank">Open Location</a>.</p>
+<p>Whatsapp:<a href="https://wa.me/26775017102?text=Hello%20I%20got%20your%20link%20online"class="social-btn email" target="_blank">Message on WhatsApp</a>.</p>
 
 <h2><b>Business Hours</b></h2>
 <p> Monday – Friday: 9:00 AM – 6:00 PM CAT</p>
@@ -52,10 +104,10 @@
 
 <h2><b>Follow Us</b></h2>
 <p>Stay updated with the latest forex news, analysis, and strategies:</p>
-<p>Facebook:<a href="https://www.facebook.com/profile.php?id=100092523932241" target="_blank">Open Facebook</a>.</p>
-<p>WhatsappGroup:<a href="https://chat.whatsapp.com/LkyYOS7ZWrKIMUkWh9HJs2" target="_blank">Join WhatsApp Group</a>.</p>
-<p>Telegram:<a href="https://t.me/yourusername" target="_blank">Message on Telegram</a>.</p>
-<p>Instagram:<a href="https://instagram.com/yourusername" target="_blank">View Instagram Profile</a>.</p>
+<p>Facebook:<a href="https://www.facebook.com/profile.php?id=100092523932241"class="social-btn email" target="_blank">Open Facebook</a>.</p>
+<p>WhatsappGroup:<a href="https://chat.whatsapp.com/LkyYOS7ZWrKIMUkWh9HJs2"class="social-btn email" target="_blank">Join WhatsApp Group</a>.</p>
+<p>Telegram:<a href="https://t.me/yourusername"class="social-btn email" target="_blank">Message on Telegram</a>.</p>
+<p>Instagram:<a href="https://instagram.com/yourusername"class="social-btn email" target="_blank">View Instagram Profile</a>.</p>
 
 <h2><b>Send Us a Message</b></h2>
 <p>Have a question? Fill out the form below, and we’ll get back to you as soon as possible:</p>
