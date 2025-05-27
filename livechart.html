@@ -5,6 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Feedback Form</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+
+.chart-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 80vh; /* 80% of the screen height */
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.tradingview-widget-container {
+  width: 100%;
+  height: 100%;
+
+    
+  </style>
 </head>
 <body>
 <header>
@@ -25,26 +42,31 @@
 </header>
 
 <main>
-   <!-- TradingView Widget BEGIN -->
-  <div class="tradingview-widget-container" style="height:800px; width:100%;">
-    <div class="tradingview-widget-container__widget" style="height:100%; width:100%;"></div>
-    <div class="tradingview-widget-copyright">
-      <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
-        <span class="blue-text">Track all markets on TradingView</span>
-      </a>
+  <!-- TradingView Widget BEGIN -->
+  <div class="chart-container">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright" style="text-align: center; margin-top: 10px;">
+        <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
+          <span class="blue-text">Track all markets on TradingView</span>
+        </a>
+      </div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "NASDAQ:AAPL",
+        "interval": "D",
+        "timezone": "Etc/UTC",
+        "theme": "light",
+        "style": "1",
+        "locale": "en",
+        "allow_symbol_change": true,
+        "support_host": "https://www.tradingview.com"
+      }
+      </script>
     </div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-    {
-      "autosize": true,
-      "symbol": "NASDAQ:AAPL",
-      "interval": "D",
-      "timezone": "Etc/UTC",
-      "theme": "light",
-      "style": "1",
-      "locale": "en",
-      "allow_symbol_change": true,
-      "support_host": "https://www.tradingview.com"
-
+  </div>
+  <!-- TradingView Widget END --> 
 </main>
   
 <footer>
